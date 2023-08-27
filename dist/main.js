@@ -1,4 +1,5 @@
-// echo -n ${SECRET_KEY} | sha256sum
+// Required Properties: CALENDER_ID, KEY_HASH
+// Key Hash: echo -n ${SECRET_KEY} | sha256sum
 
 function doPost(e) {
   if (!e) throw new Error(`Invalid arguments`);
